@@ -1,0 +1,151 @@
+/*=============== ANIMATIONS ===============*/
+
+body {
+  background: darkblue;
+}
+
+/*=============== TOILET ANIMATION ===============*/
+
+.toilet {
+  position: relative;
+  width: 281px;
+  height: 433px;
+}
+
+.toilet-bowl img {
+  position: absolute;
+}
+
+.toilet-flush img {
+  position: absolute;
+  top: 8%;
+  left: 3%;
+  -webkit-animation: flush 5s linear infinite;
+  -webkit-transform-origin: 80% 50% 0;
+  transform-origin: 80% 50% 0;
+}
+
+@-webkit-keyframes flush {
+  100% { -webkit-transform: rotate(0deg);}
+  95% { -webkit-transform: rotate(-23deg);}
+  5% { -webkit-transform: rotate(-45deg);}
+  0% { -webkit-transform: rotate(0deg);}
+}
+
+/*=============== BICYCLE ANIMATION ===============*/
+
+.bicycle {
+  width: 794px;
+  height: 451px;
+  position: relative;
+}
+
+.bicycle-frame img {
+  position: absolute;
+  z-index: 500;
+}
+
+.bicycle-wheel-front img {
+  position: absolute;
+  top: 33%;
+  left: 0.05%;
+  z-index: 499;
+  -webkit-animation: rotate 3s linear infinite;
+}
+
+.bicycle-crank img {
+  position: absolute;
+  top: 54.5%;
+  left: 44%;
+  z-index: 501;
+  -webkit-animation: rotateCrank 2.5s linear infinite;
+}
+
+.bicycle-wheel-rear img {
+  position: absolute;
+  top: 33%;
+  left: 62.05%;
+  z-index: 499;
+  -webkit-animation: rotate 3s linear infinite;
+}
+
+@-webkit-keyframes rotate {
+  100% { -webkit-transform: rotate(-360deg);}
+  0% { -webkit-transform: rotate(0deg);}
+}
+
+@-webkit-keyframes rotateCrank {
+  100% { -webkit-transform: rotate(-720deg);}
+  0% { -webkit-transform: rotate(0deg);}
+}
+
+/*=============== BICYCLE ANIMATION ===============*/
+
+.burger {
+  position: relative;
+  width: 497px;
+  height: 459px;
+}
+
+.burger-layers img {
+  position: absolute;
+}
+
+.burger-bite1, .burger-bite2, .burger-bite3, .burger-bite4, .burger-bite5, .burger-bite6 {
+  position: absolute;
+  border-radius: 50%;
+  /*border: 2px solid tomato;*/
+  background-color: darkblue;
+}
+
+.burger-bite1 {
+  /*display: none;*/
+  top: -8%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.burger-bite2 {
+  /*border: 2px solid tomato;*/
+  /*display: none;*/
+  top: -11%;
+  left: 59%;
+  width: 300px;
+  height: 300px;
+}
+
+.burger-bite3 {
+  /*border: 2px solid green;*/
+  /*display: none;*/
+  top: 38%;
+  left: 83%;
+  width: 150px;
+  height: 150px;
+}
+
+.burger-bite4 {
+  /*display: none;*/
+  top: -8%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.burger-bite5 {
+  /*border: 2px solid tomato;*/
+  /*display: none;*/
+  top: -11%;
+  left: 59%;
+  width: 300px;
+  height: 300px;
+}
+
+.burger-bite6 {
+  /*border: 2px solid green;*/
+  /*display: none;*/
+  top: 38%;
+  left: 83%;
+  width: 150px;
+  height: 150px;
+}
