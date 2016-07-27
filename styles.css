@@ -315,3 +315,77 @@ body {
     transform: scale(1);
   }
 }
+
+/*=============== TRACK ANIMATION ===============*/
+
+.computer-container {
+  width: 1373px;
+  heigth: 362px;
+  position: relative;
+}
+
+.ruby, .c-sharp, .css, .android {
+  width: 128px;
+  height: 128px;
+  position: absolute;
+}
+
+.ruby {
+  top: 18%;
+  left: 32%;
+  -webkit-animation: rubyAnimation 3s linear infinite;
+  animation-delay: 0.5s;
+}
+
+.c-sharp {
+  top: 18%;
+  left: 79%;
+  -webkit-animation: csharpAnimation 3s linear infinite;
+  animation-delay: 0.5s;
+}
+
+.css {
+  bottom: 5.5%;
+  left: 7.5%;
+  -webkit-animation: cssAnimation 3s linear infinite;
+  animation-delay: 0.5s;
+}
+
+.android {
+  bottom: 10%;
+  left: 55.5%;
+  -webkit-animation: androidAnimation 3s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes rubyAnimation {
+  20% { opacity: 0; }
+  50% { opacity: 1; }
+  50% { left: 79%; }
+  100% { left: 79%; }
+  0% { left: 32%; }
+}
+
+@keyframes csharpAnimation {
+  20% { opacity: 0; }
+  50% { opacity: 1; }
+  50% { left: 32%; }
+  100% { left: 32%; }
+  0% { left: 79%; }
+}
+
+@keyframes cssAnimation {
+  20% { opacity: 0; }
+  50% { opacity: 1; }
+  50% { left: 55.5%; }
+  100% { left: 55.5%; }
+  0% { left: 7.5%; }
+}
+
+@keyframes androidAnimation {
+  20% { opacity: 0; }
+  50% { opacity: 1; }
+  50% { left: 7.5%; }
+  100% { left: 7.5%; }
+  0% { left: 55.5%; }
+}
