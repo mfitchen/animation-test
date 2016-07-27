@@ -198,15 +198,120 @@ body {
 /*=============== NAMETAG ANIMATION ===============*/
 
 .pokemon {
-  position: relative;
   margin: 10px auto;
-  width: 450px;
-  height: 322px;
+  width: 960px;
+  height: 500px;
+}
+
+.pokemon-roll {
+  display: flex;
+  width: 100%;
+  height: 100%;
   z-index: 1;
 }
 
+.pokemon-ball {
+  position: relative;
+  width: 480px;
+  height: 100%;
+  z-index: 1;
+}
+
+.pokemon-ball img#pokemon-ball {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  z-index: 550;
+  -webkit-animation: pokemonRoll 5s infinite;
+  -webkit-animation: pokemonRotate 5s infinite;
+  -webkit-transform-origin: 50% 50% 0;
+  transform-origin: 50% 50% 0;
+}
+
+.pokemon-ball img#pokemon-ball-red {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  z-index: 600;
+  opacity: 0;
+  -webkit-animation: pokemonRoll 5s infinite;
+  -webkit-animation: pokemonNo 5s infinite;
+}
+
+.pokemon-character {
+  position: relative;
+  width: 480px;
+  height: 100%;
+  z-index: 1;
+}
+
+.pokemon-character img#pokemon-character {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  z-index: 500;
+}
+
+.pokemon-character img#pokemon-character-tail {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  z-index: 450;
+  -webkit-animation: pokemonTail 2.5s infinite;
+}
+
 @keyframes pokemonNo {
-  100% { opacity: 1; }
-  0.1%   { opacity: 1; }
+  100% { opacity: 0; }
+  90%   { opacity: 1; }
+  80%   { opacity: 0; }
+  70%   { opacity: 1; }
+  60%   { opacity: 0; }
+  50%   { opacity: 1; }
+  40%   { opacity: 0; }
+  30%   { opacity: 1; }
+  20%   { opacity: 0; }
+  10%   { opacity: 1; }
   0%   { opacity: 0; }
+}
+
+@keyframes pokemonRotate {
+  0% {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(325deg);
+    -webkit-transform: rotate(325deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+}
+
+@keyframes pokemonRoll {
+  0% {
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+  }
+  50% {
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+  }
+}
+
+@keyframes pokemonTail {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.125);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
