@@ -4,12 +4,18 @@ body {
   background: beige;
 }
 
+.animation {
+  margin-bottom: 133px;
+  margin-left: 333px;
+}
+
 /*=============== TOILET ANIMATION ===============*/
 
 .toilet {
   position: relative;
   width: 281px;
   height: 433px;
+  margin-top: 33px;
 }
 
 .toilet-bowl img {
