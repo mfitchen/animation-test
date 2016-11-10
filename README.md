@@ -23,7 +23,7 @@
 _If you run into any issues or have questions, ideas, or concerns, please feel free to contact Marty at <a href="mailto:mfitchen@gmail.com">mfitchen@gmail.com</a>._
 _To review this project, please visit the live webpage:_
 
-* _Live Webpage: <a href="https://mfitchen.github.io/animation-test" target="_blank">mfitchen.github.io/animation-test</a>_
+* _Live Webpage: <a target="_blank" href="https://mfitchen.github.io/animation-test">mfitchen.github.io/animation-test</a>_
 
 ## Technologies Used
 
